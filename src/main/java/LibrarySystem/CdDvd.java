@@ -7,11 +7,11 @@ public class CdDvd extends Asset{
     private int playTime;
     private String productionYear;
 
-    public CdDvd(int id, String title, Producer producer, Director director, String status, int playTime, String productionYear) {
+    public CdDvd(int id, String title, Producer producer, Director director, int playTime, String productionYear) {
         super(id, title);
         this.producer = producer;
         this.director = director;
-        this.status = status;
+        this.status = "available";
         this.playTime = playTime;
         this.productionYear = productionYear;
     }

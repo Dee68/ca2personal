@@ -6,14 +6,12 @@ public class BookAudioBook extends Asset{
     private String status;
     private String publishedYear;
 
-    public BookAudioBook() {
-        super();
-    }
 
-    public BookAudioBook(int id, String title, String isbn, String status, String publishedYear, Author author) {
+
+    public BookAudioBook(int id, String title, String isbn,  String publishedYear, Author author) {
         super(id, title);
         this.isbn = isbn;
-        this.status = status;
+        this.status = "available";
         this.publishedYear = publishedYear;
         this.author = author;
     }
