@@ -59,4 +59,19 @@ public class LibraryServiceImpl implements LibraryServiceInterface{
     public void showOverdueAssets() {
 
     }
+
+    @Override
+    public void printAuthors() {
+
+    }
+
+    @Override
+    public void printUsers() {
+
+    }
+
+    @Override
+    public void printAssets() {
+
+    }
 }

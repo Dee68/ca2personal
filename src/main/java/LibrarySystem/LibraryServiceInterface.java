@@ -10,4 +10,7 @@ public interface LibraryServiceInterface {
     void showBorrowedAssetsByUser(int id);//assets borrowed by a user
     void showAssetsAuthoredByAuthor(String authorName);
     void showOverdueAssets();
+    void printAuthors();
+    void printUsers();
+    void printAssets();
 }

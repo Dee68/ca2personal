@@ -32,7 +32,10 @@ public class LibraryManagement {
             System.out.println(BLUE+"  7. - Display Assets Borrowed by a user"+RESET);
             System.out.println(BLUE+"  8. - Display Overdue Assets"+RESET);
             System.out.println(BLUE+"  9. - Display Assets Authored by an Author"+RESET);
-            System.out.println(BLUE+"  10. - Exit"+RESET);
+            System.out.println(BLUE+"  10. - Print Authors to file"+RESET);
+            System.out.println(BLUE+"  11. - Print Users to file"+RESET);
+            System.out.println(BLUE+"  12. - Print Assets to file"+RESET);
+            System.out.println(BLUE+"  13. - Exit"+RESET);
             int choice = validate.validateNumber();
             switch (choice){
                 case 1:
@@ -64,6 +67,15 @@ public class LibraryManagement {
                     //
                     break;
                 case 10:
+                    //
+                    break;
+                case 11:
+                    //
+                    break;
+                case 12:
+                    //
+                    break;
+                case 13:
                     //exit loop
                     System.out.println(GREEN+" \033[1mThank you for using the application."+RESET);
                     System.exit(0);
