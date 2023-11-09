@@ -6,6 +6,7 @@ import java.util.regex.Pattern;
 public class Validator {
     public final String RED="\u001B[31m";
     public final String RESET="\u001B[0m";
+    public final String BLUE = "\u001b[34m";
     private static Pattern publishYear = Pattern.compile("^\\d{4}");
     //validates all Id input fields
     public int validateId(){
@@ -89,5 +90,33 @@ public class Validator {
         return year;
     }
 
+    //validate number choice input
+    public int validateNumber(){
+        Scanner input = new Scanner(System.in);
+        int value = 0;
+        int choice = 0;
+        while (value == 0) {
+            System.out.print(BLUE+"  Enter Choice: "+RED+"(only +numbers allowed): "+RESET);
+            String s = input.nextLine();
+            if (s.isEmpty()) {
+                System.out.println(RED + " You did not enter a value!!" + RESET);
+            } else {
+                try {
+                    value = Integer.parseInt(s);
+                    if (value < 0){
+                        value = 0;
+                        System.out.println(RED+" Please only positive numbers allowed!!"+RESET);
+                    }
+                    choice = value;
+
+                } catch (NumberFormatException ex) {
+                    System.out.println(RED + " Please enter a valid input!!!" + RESET);
+                }
+
+            }
+
+        }
+        return choice;
+    }
 
 }
