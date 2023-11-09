@@ -7,9 +7,9 @@ public class Author extends Person{
 
 
 
-    public Author(int id, String name, ArrayList<BookAudioBook> booksAuthored) {
+    public Author(int id, String name) {
         super(id, name);
-        this.booksAuthored = booksAuthored;
+        this.booksAuthored = new ArrayList<>();
     }
 
     public ArrayList<BookAudioBook> getBooksAuthored() {

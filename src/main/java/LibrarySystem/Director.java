@@ -5,9 +5,9 @@ import java.util.ArrayList;
 public class Director extends Person{
     private ArrayList<Asset> assetsDirected;
 
-    public Director(int id, String name, ArrayList<Asset> assetsDirected) {
+    public Director(int id, String name) {
         super(id, name);
-        this.assetsDirected = assetsDirected;
+        this.assetsDirected = new ArrayList<>();
     }
 
     public ArrayList<Asset> getAssetsDirected() {

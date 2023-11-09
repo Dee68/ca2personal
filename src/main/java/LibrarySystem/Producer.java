@@ -6,9 +6,9 @@ public class Producer extends Person{
     private ArrayList<Asset> assetProduced;
 
 
-    public Producer(int id, String name, ArrayList<Asset> assetProduced) {
+    public Producer(int id, String name) {
         super(id, name);
-        this.assetProduced = assetProduced;
+        this.assetProduced = new ArrayList<>();
     }
 
     public ArrayList<Asset> getAssetProduced() {

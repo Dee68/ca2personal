@@ -6,9 +6,9 @@ public class LibraryUser extends Person{
     private ArrayList<Asset> borrowedBooks;
 
 
-    public LibraryUser(int id, String name, ArrayList<Asset> borrowedBooks) {
+    public LibraryUser(int id, String name) {
         super(id, name);
-        this.borrowedBooks = borrowedBooks;
+        this.borrowedBooks = new ArrayList<>();
     }
 
     public ArrayList<Asset> getBorrowedBooks() {
