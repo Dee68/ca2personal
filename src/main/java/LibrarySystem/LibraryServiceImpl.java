@@ -1,9 +1,23 @@
 package LibrarySystem;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class LibraryServiceImpl implements LibraryServiceInterface{
+    static final String RESET = "\u001B[0m";
+    static final String RED = "\u001B[31m";
+    static final String BLUE = "\u001b[34m";
+    static final String GREEN = "\u001B[32m";
+    Scanner scan = new Scanner(System.in);
+    Validator validate = new Validator();
+    ArrayList<Author> authors = new ArrayList<>();
     @Override
     public void addAuthor() {
-
+     int Id = validate.validateId();
+     String name = validate.validateTitle("Name");
+     Author author = new Author(Id,name);
+     authors.add(author);
+        System.out.println(GREEN+" Author successfully created"+RESET);
     }
 
     @Override

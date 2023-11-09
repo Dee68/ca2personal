@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fffbda3-6bed-4e2f-ba07-da315556b05f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/LibraryManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/LibraryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/LibraryServiceInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/Validator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LibrarySystem/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LibrarySystem/BookAudioBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/BookAudioBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LibrarySystem/CdDvd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/CdDvd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LibrarySystem/ThesisDissertation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/ThesisDissertation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LibrarySystem/LibraryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/LibraryManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LibrarySystem/LibraryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/LibraryServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

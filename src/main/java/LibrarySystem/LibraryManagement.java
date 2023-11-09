@@ -14,6 +14,7 @@ public class LibraryManagement {
         ArrayList<LibraryUser> users = new ArrayList<>();
         ArrayList<BookAudioBook> books = new ArrayList<>();
         ArrayList<CdDvd> cds = new ArrayList<>();
+        LibraryServiceImpl service = new LibraryServiceImpl();
         ArrayList<ThesisDissertation> dissertations = new ArrayList<>();
         while (true){
             System.out.println(BLUE+"""
@@ -35,6 +36,7 @@ public class LibraryManagement {
             switch (choice){
                 case 1:
                     //add author
+                    service.addAuthor();
                     break;
                 case 2:
                     //
