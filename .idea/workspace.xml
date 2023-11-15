@@ -5,10 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fffbda3-6bed-4e2f-ba07-da315556b05f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/authors.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/AssetException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/PersonException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/Printable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LibrarySystem/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/Asset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LibrarySystem/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LibrarySystem/BookAudioBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/BookAudioBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LibrarySystem/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/Director.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LibrarySystem/LibraryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/LibraryManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LibrarySystem/LibraryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/LibraryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LibrarySystem/LibraryServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/LibraryServiceInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LibrarySystem/LibraryUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/LibraryUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LibrarySystem/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LibrarySystem/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LibrarySystem/ThesisDissertation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/ThesisDissertation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LibrarySystem/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibrarySystem/Validator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,25 +39,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2Xwh0Cc2KxJgmCyuiN4epFcoG4t" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "onboarding.tips.debug.path": "/home/adonai/Documents/java/CA2Person/src/main/java/maven/dwe/jetbrains/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/adonai/Documents/java/CA2Person/src/main/java/maven/dwe/jetbrains/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,6 +72,9 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -64,6 +83,19 @@
           <line>15</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LibrarySystem/Validator.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.time.format.DateTimeParseException" package="java.time.format" />
+          <option name="timeStamp" value="6" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

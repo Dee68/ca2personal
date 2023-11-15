@@ -7,7 +7,7 @@ public class ThesisDissertation extends Asset{
     private String summary;
     private String publishedDate;
 
-    public ThesisDissertation(int id, String title, Author author, String topic, String summary, String publishedDate) {
+    public ThesisDissertation(int id, String title, Author author, String topic, String summary, String publishedDate) throws AssetException {
         super(id, title);
         this.author = author;
         this.topic = topic;

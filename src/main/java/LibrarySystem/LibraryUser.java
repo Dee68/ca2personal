@@ -6,6 +6,10 @@ public class LibraryUser extends Person{
     private ArrayList<Asset> borrowedBooks;
 
 
+    public LibraryUser(){
+        super();
+        this.borrowedBooks = new ArrayList<>();
+    }
     public LibraryUser(int id, String name) {
         super(id, name);
         this.borrowedBooks = new ArrayList<>();
@@ -23,4 +27,6 @@ public class LibraryUser extends Person{
     public String toString() {
         return String.format("UserId: %d, UserName: %s",getId(),getName());
     }
+
+
 }
