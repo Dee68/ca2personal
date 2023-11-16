@@ -3,11 +3,20 @@ package LibrarySystem;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
+
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
+import org.apache.commons.csv.CSVPrinter;
+import org.apache.commons.csv.CSVRecord;
 import java.util.Scanner;
 
 public class Author extends Person implements Printable<Author>{
     private ArrayList<BookAudioBook> booksAuthored;
+    static final String GREEN = "\u001B[32m";
+    static final String RESET = "\u001B[0m";
 
 
     public Author(){
@@ -35,15 +44,16 @@ public class Author extends Person implements Printable<Author>{
 
 
     @Override
-    public void printToFile(ArrayList<Author> objects, String filePath) {
+    public void printToFile(ArrayList<Author> objects,String csvFilePath) {
+
         StringBuilder sb = new StringBuilder();
-        if (Files.notExists(Path.of(filePath))){
-            File file = new File(filePath);
+        if (Files.notExists(Path.of(csvFilePath))){
+            File file = new File(csvFilePath);
             sb.append("AuthorId");
             sb.append(",");
             sb.append("AuthorName");
             sb.append(",");
-            sb.append("Number of Books");
+            sb.append("Number of Assets");
             sb.append(",");
             sb.append("\r\n");
 
@@ -51,7 +61,7 @@ public class Author extends Person implements Printable<Author>{
 
 
         try {
-            FileWriter fr = new FileWriter(new File(filePath), true);
+            FileWriter fr = new FileWriter(new File(csvFilePath), true);
             BufferedWriter br = new BufferedWriter(fr);
             PrintWriter writer = new PrintWriter(br);
 
@@ -76,34 +86,23 @@ public class Author extends Person implements Printable<Author>{
             throw new RuntimeException(e);
         }
 
-
     }
+
 
     @Override
     public ArrayList<Author> readFromCsv(String csvFile) {
         ArrayList<Author> authors = new ArrayList<>();
-        String line = "";
-        try {
-            BufferedReader br = new BufferedReader(new FileReader(csvFile));
-            br.readLine();//read headers
-            while ((line = br.readLine()) != null){
-                String [] tokens = line.split(",");
-                if (tokens.length > 0){
-                    Author author = new Author(Integer.parseInt(tokens[0]),tokens[1]);
-                    authors.add(author);
-                }
-            }
-            System.out.println("==============================================================");
-            String str1 = String.format("%-10s %-10s %-10s","AuthorId","AuthorName","Qty Books");
-            System.out.println(str1);
-            System.out.println("==============================================================");
-            for (Author auth:authors) {
-                String str = String.format("%-10d %-10s %-10d", auth.getId(), auth.getName(),auth.getBooksAuthored().size());
-                System.out.println(str);
+        try (FileReader fr = new FileReader(csvFile);
+             CSVParser csvParser = CSVFormat.DEFAULT.withFirstRecordAsHeader().parse(fr)) {
+            for (CSVRecord csvRecord : csvParser) {
+                int authorId = Integer.parseInt(csvRecord.get("AuthorId"));
+                String name = csvRecord.get("AuthorName");
+                authors.add(new Author(authorId, name));
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
         return authors;
     }
 

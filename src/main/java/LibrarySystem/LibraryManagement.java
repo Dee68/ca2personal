@@ -222,7 +222,7 @@ public class LibraryManagement {
 
                     authors.get(0).printToFile(authors,"authors.csv");
                     System.out.println(GREEN+" Author(s) results printed to file."+RESET);
-                    authors.get(0).readFromCsv("authors.csv");
+                    System.out.println(authors.get(0).readFromCsv("authors.csv"));
                     break;
                 case 13:
                     //

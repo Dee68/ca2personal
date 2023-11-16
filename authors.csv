@@ -1,12 +1,3 @@
-AuthorId,AuthorName,Number of Books,
-131,James Boron,0,
-12,Grace Jones,0,
-270,Kelly Roland,0,
-351,Jack Curtin,0,
-315,Tracy Chapman,0,
-910,Sean McCarthy,0,
-974,Leonard Vinci,0,
-20,Grace Jones,0,
-381,Kelly Owens,1,
-398,Fredrick Gomez,0,
-136,William Shakespear,1,
+AuthorId,AuthorName,Number of Books
+524,Grace Jones,0
+372,Leonard Berges,0,
